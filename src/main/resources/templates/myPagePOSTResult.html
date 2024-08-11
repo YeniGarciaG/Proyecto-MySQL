@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contenido WEB con Springboot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>RESULTADO DEL POST</h1>
+    Libro insertado correctamente. Resumen de Libro:
+    <p th:text="'ID: ' + ${bookmodel.id}"> </p>
+    <p th:text="'Nombre: ' + ${bookmodel.name}"> </p>
+    <p th:text="'Autor: ' + ${bookmodel.autor}"> </p>
+    <a href="/formPageWithPOST">Submit another message</a>
+</body>
+</html>
